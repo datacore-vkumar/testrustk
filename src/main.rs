@@ -33,6 +33,7 @@ fn main() {
         js.publish("orders.recieved","Hello");
         let ten_millis = time::Duration::from_millis(5000);
         thread::sleep(ten_millis);
+        n = n+1;
     }
 
 }
