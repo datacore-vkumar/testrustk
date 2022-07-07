@@ -4,7 +4,7 @@ use nats::jetstream::{StreamConfig, StorageType, PublishOptions};
 fn main() {
 
 
-    let nc = nats::connect("http://nats:4222").unwrap();
+    let nc = nats::connect("nats:4222").unwrap();
     let js = nats::jetstream::new(nc);
     //js.delete_stream("mystreama".to_string());
     //js.delete_stream("mystream".to_string());
